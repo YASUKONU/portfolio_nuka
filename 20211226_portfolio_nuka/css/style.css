@@ -1,0 +1,458 @@
+@charset "utf-8";
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+body,
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+  margin: 0;
+  margin: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #4c4c4c;
+  font-family: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ',
+    'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+h1 {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/******---------------ヘッダー-------------*********/
+
+.head_logo {
+  width: 330px;
+  padding: 40px;
+  margin-left: 60px;
+}
+
+.head_ig {
+  max-width: 45px;
+  margin: 0 0 0 auto;
+  padding: 0 80px 80px 0;
+}
+
+/******---------------メニュー-------------*********/
+
+.head_nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 50px 30px 0;
+}
+
+.head_nav li {
+  font-size: 33px;
+  padding: 0 30px;
+}
+
+/*-------スキル-------*/
+
+.title1 p {
+  text-align: center;
+  font-size: 100px;
+  padding: 197px;
+}
+
+.wrap1 {
+  max-width: 1920px; /*1000?*/
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box_title p {
+  font-size: 26px;
+  color: #4c4c4c;
+  text-align: center;
+}
+
+.box_titlsab p {
+  font-size: 15px;
+  color: #888282;
+  text-align: center;
+  margin: 8px;
+}
+
+.box_text p {
+  max-width: 80%;
+  font-size: 18px;
+  line-height: 1.9;
+  margin: 0 auto;
+}
+
+.box_text img {
+  margin: 50px auto;
+  display: block;
+}
+
+/*-------Work-------*/
+
+.title2 p {
+  text-align: center;
+  font-size: 100px;
+  padding: 197px;
+}
+
+.pc-br_gallery {
+  max-width: 86%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.pc-br_gallery img {
+  width: 30%;
+  margin-bottom: 40px;
+}
+
+.sp-br_gallery {
+  max-width: 59%;
+}
+
+.btn {
+  width: 80px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+/*-------About-------*/
+
+.title3 p {
+  text-align: center;
+  font-size: 100px;
+  padding: 197px;
+}
+
+.wrap3 {
+  max-width: 87%;
+  margin: 0 auto;
+}
+
+.wrap3 img {
+  max-width: 30%;
+}
+
+.content {
+  max-width: 59%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.name1 p {
+  font-size: 44px;
+  padding-bottom: 10px;
+}
+
+.name2 p {
+  font-size: 18px;
+}
+
+.name {
+  padding-bottom: 30px;
+}
+
+.prof {
+  margin-left: 66px;
+}
+
+.add p {
+  line-height: 2.6;
+}
+
+.text2 p {
+  max-width: 59%;
+  margin: 0 auto;
+  line-height: 2.4;
+  padding: 85px;
+}
+
+/*-------contact-------*/
+
+.title4 p {
+  text-align: center;
+  font-size: 100px;
+  padding-bottom: 37px;
+}
+
+.wrap4 p {
+  text-align: center;
+  margin: 20px;
+}
+
+.btn2 {
+  width: 80px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/*-------footer-------*/
+
+.back {
+  margin: 0 auto;
+  width: 5%;
+  padding: 120px;
+}
+
+.footer p {
+  text-align: end;
+  padding: 20px 50px 20px 0;
+}
+
+.footer_nav ul {
+  display: flex;
+  align-items: center;
+  padding: 0 50px 30px 131px;
+}
+
+.footer_nav li {
+  font-size: 20px;
+  padding: 0 30px;
+}
+
+.sp-br {
+  display: none;
+}
+
+.sp-br_slider {
+  display: none;
+}
+
+/*------スマホ-----------------------------------------------*/
+
+@media screen and (max-width: 1920px) {
+  .ps-br {
+    display: block; /* PCを改行して */
+  }
+}
+
+.sp_nav {
+  display: none;
+}
+
+.sp_menu_btn {
+  display: none;
+}
+
+.sp-br_slider {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .head_logo {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .head_ig {
+    padding: 0 25px 20px 0;
+  }
+
+  /*--ナビ--*/
+  .head_nav {
+    display: none;
+  }
+
+  .sp_menu_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    cursor: pointer;
+    z-index: 100;
+    padding: 40px 25px 0 0;
+  }
+
+  .sp_menu_btn span {
+    background: #4c4c4c;
+    width: 33px;
+    height: 3px;
+    display: block;
+    position: relative;
+  }
+
+  .sp_menu_btn span::before,
+  .sp_menu_btn span::after {
+    content: '';
+    width: 33px;
+    height: 3px;
+    display: block;
+    background: #4c4c4c;
+    position: absolute;
+    transition: 0.3s;
+  }
+
+  .sp_menu_btn span::before {
+    bottom: 30px;
+  }
+
+  .sp_menu_btn span::after {
+    top: 10px;
+  }
+
+  .sp_menu_btn span::before {
+    bottom: 10px;
+  }
+
+  .sp_menu_btn span::after {
+    top: 10px;
+  }
+
+  .open span {
+    background: transparent;
+  }
+
+  .open span::before {
+    bottom: 0px;
+    transform: rotate(45deg);
+  }
+
+  .open span::after {
+    top: 0px;
+    transform: rotate(135deg);
+  }
+
+  /*-----スマホメニュー表示　反映されない---------*/
+
+  .sp_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300vh;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .sp_nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .sp_nav a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  /*--TOP画像--*/
+  .ps-br {
+    display: none; /*PCの改行を隠して*/
+  }
+
+  .sp-br {
+    display: block; /*SPを改行する*/
+  }
+
+  .wrap1 {
+    max-width: 84%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .box_text p {
+    max-width: 84%;
+    font-size: 18px;
+    line-height: 1.9;
+    margin-bottom: 100px;
+  }
+
+  .title2 p {
+    max-width: 80%;
+    text-align: center;
+    font-size: 100px;
+    padding: 80px;
+  }
+
+  /*----------skill----------*/
+
+  /*----------About----------*/
+
+  .title3 {
+    padding: 100px 0 50px 0;
+  }
+
+  .content {
+    width: 560px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .title3 p {
+    text-align: center;
+    font-size: 100px;
+    padding: 30px;
+  }
+
+  .wrap3 img {
+    max-width: 60%;
+    margin-left: 85px;
+  }
+  .text2 p {
+    max-width: 83%;
+    margin: 0 auto;
+    line-height: 2.4;
+  }
+
+  .name1 {
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .name {
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  .Box {
+    width: 100%;
+  }
+  .Box ul {
+    margin: 0 auto;
+    width: 450px;
+  }
+
+  .prof {
+    margin-left: -66px;
+  }
+
+  /*----------Work----------*/
+
+  .pc-br_gallery {
+    display: none; /* PCの改行を隠して */
+  }
+
+  .sp-br_slider {
+    display: block; /* SPを改行する */
+  }
+}
